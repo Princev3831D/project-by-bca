@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.center
+{ 
+    margin-top: 29px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>
+    <div class="center">
+        <img src="thankyou.gif" alt="thank you"  height="200px"  width="40%" />
+     </div>
+     
+        <div class="container">
+  <form action="/submit_feedback">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder=" Enter your first name..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+    <label for="email">Course</label>
+    <input type="text" id="course" name="course" placeholder="Enter your course">
+    <label for="feedback">Feedback</label>
+    <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
